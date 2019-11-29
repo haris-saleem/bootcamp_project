@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
-function App() {
+const MyButton = (prop) => {
+
+  const [state, setState] = useState("blue");
+
+  const changeState = () => {
+    if(state === "blue"){
+      setState("red")
+    }
+      else{
+        setState("blue");
+      
+    }
+    
+  }
+return(
+
+<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+  <button onClick = {changeState} className = {state}>{prop.children}</button>  
+</div>
+
+)
+}
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className= "App">
+      <MyButton>Click me</MyButton>
     </div>
   );
 }
