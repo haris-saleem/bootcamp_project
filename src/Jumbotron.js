@@ -36,6 +36,9 @@ const Jumbotron = ({title, lead, moreInfo, buttonLabel}) => {
                 className="btn btn-primary" href="#" role="button">
                     {buttonLabel}
                 </button>
+
+               
+        
             </div>
 
             { 

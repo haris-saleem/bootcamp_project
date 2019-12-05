@@ -82,6 +82,12 @@
  
  opacity: 0.5s;
 }
+.post-comment {
+ max-width: 600px;
+ margin: 20px auto;
+ padding: 20px;
+ background: darkgrey;
+}
 
 footer {
  position: static;

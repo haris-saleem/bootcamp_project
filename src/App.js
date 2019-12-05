@@ -48,7 +48,7 @@ const App = () => {
                 
             
             <Jumbotron 
-                title="The Newsletter"
+                title="PunchTheClock"
                 lead="Welcome to ABC.com, the biggest platform for the alphabet."
                 moreInfo="Click here to learn more about learning ABC"
                 buttonLabel="Signup"

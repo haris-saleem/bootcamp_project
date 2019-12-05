@@ -30,11 +30,10 @@ const links = [ {
 const LayoutRoute = ({path, component, exact}) => {
     return(
         <div>
-        <NavBar className = "navbar navbar-light bg-light" links={links}  logo={logo} />
+        
         <Route path={path} exact={exact} component={component}/>
-        <Sidebar/>
-        <Overlay/>
-        <Footer links={links}/>
+       
+       
          </div>
     )
 }
