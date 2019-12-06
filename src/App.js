@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
+import PostComment from "./PostComment"
 import Jumbotron from "./Jumbotron";
 import Feed from './Feed';
 import RegistrationForm from './RegistrationForm';
 import LoginForm from './LoginForm';
+
 
 
 import AppContext from './AppContext' // Allows us to have access to global state
@@ -48,7 +50,7 @@ const App = () => {
                 
             
             <Jumbotron 
-                title="PunchTheClock"
+                title="The Newsletter"
                 lead="Welcome to ABC.com, the biggest platform for the alphabet."
                 moreInfo="Click here to learn more about learning ABC"
                 buttonLabel="Signup"
